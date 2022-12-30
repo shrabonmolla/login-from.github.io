@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 1px solid red;
+    width: 100%;
+    background-image: url(kodak-scott-ljPWmHJudlE-unsplash.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.login_button{
+    padding: 1em 2em;
+    font-size: 1rem;
+    background-color:#7400b8 ;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: .5em;
+}
+.main_container{
+    display: none;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    position: fixed;
+    padding: 3em 1em;
+    border-radius: 1em;
+    animation-name: shrabon;
+    animation-duration: 1s;
+}
+@keyframes shrabon {
+    from{
+        transform: scale(0);
+        
+    }
+    to{
+        transform: scale(1);
+        
+    }
+    
+}
+input[type=text],input[type=password]{
+    display: block;
+    margin: .5em 0 ;
+    border: 1px solid black;
+    width: 100%;
+    padding: 1em 0 ;
+    
+    
+    
+}
+.login_extra{
+    width: 100%;
+    margin: 1em 0;
+}
+.section_two{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.cancel{
+    background-color: #fd6753;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    padding-right: .5em;
+}
+.section_one{
+    margin: 1em 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#ww{
+color: #fd6753;
+}

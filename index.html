@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        <div >
+        <button onclick="document.getElementById('main_container').style.display='block'" class="login_button"><b>Login</b></button> 
+        </div>
+         
+        <div id="main_container" class="main_container">
+            <span class="close" onclick="document.getElementById('main_container').style.display='none'" >&times;</span>
+            
+<!-- -------------------------------------------------------------------------------- -->
+
+            <div class="section_one">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" name="uname" placeholder="&nbsp;&nbsp;Enter user name " required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" name="psw" placeholder="&nbsp; &nbsp;Enter password" required>
+
+                <button  class="login_button login_extra" ><b><a href="thanks.html">Login</a></b></button>
+            </div>
+<!-- ------------------------------------------------------------------------------------- -->
+
+
+<!-- ----------------------------------------------------------------------------------------- -->
+            <div class="section_two">
+                <div>
+                <button class="login_button cancel" onclick="document.getElementById('main_container').style.display='none'" >Cancel</button>
+                </div>
+                <div >
+                    Forget <a id="ww" href="#">Password</a>
+                </div>
+            </div>
+<!-- ---------------------------------------------------------------------------------------------- -->
+        </div>
+    </div>
+</body>
+</html>
